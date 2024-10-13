@@ -1,0 +1,116 @@
+// src/components/Header.scss
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 0 50px;
+
+  .logo img {
+    height: 150px;
+  }
+
+  #search {
+    margin: 15px 0;
+
+    .search-content {
+      position: relative;
+    }
+
+    form {
+      display: block;
+      margin-top: 0em;
+      unicode-bidi: isolate;
+
+      .search-input {
+        height: 40px;
+        color: #111;
+        padding-right: 100px;
+        padding-left: 15px;
+        font-size: 14px;
+        font-weight: 400;
+        background: #fff;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05) !important;
+
+        &:focus {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+
+    .search-icon {
+      width: 40px;
+      height: 40px;
+      background: 0 0;
+      border: none;
+      padding: 0 10px;
+      line-height: 40px;
+      display: inline-block;
+      color: #111;
+      text-align: center;
+      position: absolute;
+      right: 50px;
+      top: 0;
+      z-index: 2;
+    }
+
+    .filter-icon {
+      height: 26px;
+      cursor: pointer;
+      line-height: 26px;
+      font-size: 0.8em;
+      background: #000;
+      color: #fff;
+      padding: 0 6px;
+      border-radius: 6px;
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      z-index: 3;
+      text-decoration: none;
+
+      &:hover {
+        background: #ffbade !important;
+        color: #000;
+      }
+    }
+  }
+
+  .menu {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #ffbade;
+          }
+        }
+      }
+    }
+  }
+
+  .user-actions {
+    display: flex;
+    gap: 15px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #ffbade;
+      }
+    }
+  }
+}
