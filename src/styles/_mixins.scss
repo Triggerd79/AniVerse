@@ -1,0 +1,25 @@
+@mixin flex($dir, $just, $align) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $just;
+  align-items: $align;
+}
+
+@mixin padding($top, $bottom, $left, $right) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+@mixin margin($top, $bottom, $left, $right) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+@mixin border($width, $radius) {
+  border: $width solid white;
+  border-radius: $radius;
+}

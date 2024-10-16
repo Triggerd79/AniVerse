@@ -1,0 +1,154 @@
+.spotlight-card {
+  position: relative;
+  min-width: 100vw;
+  min-height: 85vh;
+
+  // image
+  .image-container {
+    .blur-overlay-left {
+      position: absolute;
+      z-index: -1;
+      min-height: 140vh;
+      min-width: 50vw;
+      top: -35%;
+      left: -15%;
+      background-color: #201f31;
+      filter: blur(62px);
+    }
+
+    .blur-overlay-right {
+      position: absolute;
+      z-index: -1;
+      top: -40%;
+      min-height: 160vh;
+      min-width: 20vw;
+      left: 90%;
+      background-color: #201f31;
+      filter: blur(62px);
+    }
+
+    .blur-overlay-bottom {
+      position: absolute;
+      z-index: -1;
+      min-height: 60vh;
+      min-width: 130vw;
+      bottom: -40%;
+      background-color: #201f31;
+      filter: blur(62px);
+    }
+
+    img {
+      position: absolute;
+      z-index: -2;
+      top: 0;
+      right: 0;
+      height: 90vh;
+      width: 90vw;
+      object-fit: cover;
+    }
+  }
+
+  // desc
+  .spotlight-card-info {
+    left: 4%;
+    position: absolute;
+    bottom: 15%;
+
+    .rank {
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--secondary-color);
+      position: relative;
+      z-index: 2;
+    }
+    .title {
+      position: relative;
+      z-index: 2;
+      margin: 30px 0;
+      max-width: 500px;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 3rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      color: var(--text-color);
+    }
+
+    .other-info-container {
+      margin-top: 20px;
+      @include flex(row, start, center);
+      .other-info {
+        scale: 0.8;
+        color: #fff;
+        svg {
+          width: 1.5em;
+        }
+      }
+
+      .quality {
+        padding: 0 5px;
+        border-radius: 5px;
+        background-color: var(--secondary-color);
+        color: black;
+        scale: 0.7;
+      }
+    }
+
+    .description {
+      margin: 30px 0;
+      max-width: 500px;
+      max-height: 80px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      overflow: hidden;
+    }
+
+    button {
+      @include padding(10px, 10px, 20px, 20px);
+      @include border(2px, 30%);
+      background-color: #ffffff00;
+      color: #fff;
+      width: 10.5em;
+      height: 2.9em;
+      border: var(--secondary-color) 0.2em solid;
+      border-radius: 50px;
+      text-align: right;
+      transition: all 0.6s ease;
+
+      svg {
+        width: 1.6em;
+        margin: 0em 0em;
+        position: absolute;
+        display: flex;
+        transition: all 0.6s ease;
+      }
+
+      .text {
+        font-size: 0.9rem;
+      }
+
+      &:hover {
+        background-color: var(--secondary-color);
+        cursor: pointer;
+
+        .text {
+          transform: translateX(3px);
+          color: black;
+        }
+        svg {
+          transform: translateX(3px);
+          scale: 1.2;
+          fill: black;
+        }
+      }
+    }
+  }
+}

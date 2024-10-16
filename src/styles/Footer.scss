@@ -1,0 +1,112 @@
+#footer {
+  padding: 0;
+  position: relative;
+  top: 60px;
+
+  #footer-about {
+    padding: 2rem 0;
+
+    .container {
+      position: relative;
+      z-index: 3;
+      margin-left: 1.5rem;
+
+      .footer-top {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .footer-logo {
+          display: block;
+          float: left;
+          margin: 0 2rem 0 0;
+          position: relative;
+
+          img {
+            width: auto;
+            height: 150px;
+            position: absolute;
+            bottom: 0;
+          }
+        }
+
+        .footer-joingroup {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .footer-az {
+        margin: 0 0 1rem;
+
+        ul.az-list {
+          margin-top: 20px;
+          display: flex;
+          flex-wrap: wrap;
+
+          .az-list-item {
+            margin: 0.25rem;
+            list-style: none;
+
+            .az-list-item-link {
+              text-decoration: none;
+              color: white;
+              font-size: 1.1em;
+              font-weight: 600;
+              line-height: 1;
+              padding: 0.4rem 0.6rem;
+              display: inline-block;
+              background: rgba(255, 255, 255, 0.1);
+              border-radius: 0.4rem;
+
+              &:hover {
+                background: rgba(255, 255, 255, 0.2);
+                color: var(--secondary-color);
+              }
+            }
+          }
+        }
+      }
+
+      .footer-links {
+        margin-bottom: 10px;
+        height: 30px;
+
+        .footer-links-ul {
+          padding: 0;
+
+          .footer-links-list-item {
+            float: left;
+            margin-right: 40px;
+            list-style: none;
+
+            .footer-links-list-item-link {
+              text-decoration: none;
+              color: white;
+              line-height: 30px;
+              font-size: 0.9em;
+
+              &:hover {
+                color: var(--secondary-color);
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+
+      .about-text {
+        margin: 0 auto 5px;
+        line-height: 1.4em;
+        opacity: 0.5;
+        font-size: 0.9em;
+      }
+
+      .copyright {
+        margin-bottom: 0 !important;
+        opacity: 0.5;
+      }
+    }
+  }
+}

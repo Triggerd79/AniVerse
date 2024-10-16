@@ -1,0 +1,48 @@
+.item {
+  width: auto;
+  margin: 10px 40px;
+  position: relative;
+
+  .number {
+    position: absolute;
+    bottom: 10px;
+
+    span {
+      position: absolute;
+      bottom: 0;
+      font-size: 20px;
+      line-height: 1em;
+      text-align: center;
+      color: #ffbade;
+      z-index: 9;
+      left: 5px;
+      right: 0;
+    }
+
+    .film-title {
+      text-align: left;
+      height: 40px;
+      transform: rotate(-90deg);
+      position: absolute;
+      bottom: 90px;
+      width: 150px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      left: -55px;
+      font-weight: 500;
+    }
+  }
+
+  .film-poster {
+    display: flex;
+    height: 230px;
+    padding-left: 35px;
+
+    img {
+      object-fit: contain;
+
+      max-width: 150px;
+    }
+  }
+}

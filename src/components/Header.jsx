@@ -11,11 +11,11 @@ const Header = () => {
                 </Link>
             </div>
             <div id="search">
-                <div class="search-content">
-                    <form action="/search" autocomplete="off">
-                        <a href="/filter" class="filter-icon">Filter</a>
-                        <input type="text" class="form-control search-input" name="keyword" placeholder="Search anime..." required="" />
-                        <button type="submit" class="search-icon"> <FaSearch /></button>
+                <div className="search-content">
+                    <form action="/search" autoComplete="off">
+                        <a href="/filter" className="filter-icon">Filter</a>
+                        <input type="text" className="form-control search-input" name="keyword" placeholder="Search anime..." required="" />
+                        <button type="submit" className="search-icon"> <FaSearch /></button>
                     </form>
                 </div>
             </div>
